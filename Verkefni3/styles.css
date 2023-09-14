@@ -1,0 +1,390 @@
+/*
+#ffe7ae, #2f0505, #fff1cf, #fff9ee
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+    background-color: #2f0505;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 8px solid #ffe7ae;
+    width: 100%;
+    color: #fff1cf;
+}
+
+h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #fff9ee;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+a {
+    color: inherit;
+}
+
+main a {
+    font-weight: bold;
+}
+
+main h2 {
+    padding-left: 3rem;
+}
+
+main h3 {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+main ul .please {
+    padding-top: 1rem;
+}
+
+main ul p {
+    padding: 0;
+}
+
+main .index p {
+    padding-bottom: 1rem;
+}
+
+main .um p {
+    padding-bottom: 1rem;
+}
+
+main .aftur {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+main dt {
+    font-weight: bold;
+}
+
+main dd {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+main .top{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding-left: 3rem;
+}
+
+main .top2 {
+    padding-left: 0;
+}
+
+main .bottom{
+    display: inline-block;
+    width: 49%;
+    padding-left: 3rem;
+}
+
+main .bottom2 {
+    padding-left: 0;
+}
+
+main .rettirTop {
+    list-style: none;
+    display: inline-block;
+    width: 49%;
+    padding-left: 3rem;
+}
+
+main .rettirBottom {
+    list-style: none;
+    display: inline-block;
+    width: 49%;
+}
+
+main ul {
+    padding: 0;
+    margin: 0;
+}
+
+main ul h3 {
+    padding-top: 1rem;
+}
+
+main hr {
+    margin: 3rem;
+    border: 1px solid #ffe7ae;
+}
+
+main .bottomText p a {
+    font-weight: 400;
+}
+
+main .bottomText {
+    padding-left: 3rem;
+}
+
+main table {
+    text-align: left;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    min-width: 90%;
+}
+
+main thead th {
+    min-width: 2rem;
+    text-align: center;
+}
+
+main table th {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+main table td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+main table tbody tr:nth-child(2n-1) {
+    background-color: #ffe7ae;
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul li img {
+    width: 100%;
+}
+
+main .images1 {
+    vertical-align: top;
+    display: inline-block;
+    width: 47%;
+    padding-left: 3rem;
+}
+
+main .images2 {
+    display: inline-block;
+    width: 47%;
+    padding-left: 1rem;
+    padding-top: 0;
+}
+
+main .images3 {
+    display: inline-block;
+    width: 47%;
+    padding-left: 3rem;
+    padding-top: 0;
+}
+
+main .images4 {
+    vertical-align: top;
+    display: inline-block;
+    width: 47%;
+    padding-left: 1rem;
+    padding-top: 0;
+}
+
+main .umText {
+    padding-left: 3rem;
+    max-width: 90%;
+}
+
+main .headingUm {
+    padding-bottom: 1rem;
+}
+
+
+main form legend {
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+main form label {
+    margin-left: 1rem;
+}
+
+main form fieldset {
+    margin-bottom: 1rem;
+    border: 1px solid #ffe7ae;
+}
+
+main form .reitur1 {
+    display: inline-block;
+    width: 49.5%;
+    padding-left: 3rem;
+    vertical-align: top;
+    margin-right: 1rem;
+}
+
+main form .reitur1 input {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+main form .reitur1 select {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    min-height: 2.5rem;
+    min-width: 3rem;
+    text-align: center;
+    padding-top: 0.65rem;
+    padding-bottom: 0.5rem;
+}
+
+main form .reitur1 textarea {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+main form .reitur2 {
+    display: inline-block;
+    width: 44%;
+}
+
+main form .reitur2 label {
+    display: block;
+}
+
+main form .reitur2 input {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    min-height: 2rem;
+    min-width: 15rem;
+}
+
+main form .reitur3 {
+    display: inline-block;
+    width: 49.5%;
+    padding-left: 3rem;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+main form .reitur3 label {
+    display: block;
+}
+
+main form .reitur3 input {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    min-height: 2rem;
+    min-width: 15rem;
+}
+
+main form .reitur4 {
+    display: inline-block;
+    width: 44%;
+}
+
+main form .reitur4 input {
+    margin-right: 0.5rem;
+}
+
+main form .reitur4 button {
+    margin: 1rem;
+    min-width: 3rem;
+    min-height: 2rem;
+}
+
+footer {
+    padding-bottom: 2rem;
+    background-color: #2f0505;
+    border-top: 8px solid #ffe7ae;
+    color: #fff1cf;
+}
+
+footer h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .content {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+
+}
+footer .content .box {
+    width: 25%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+footer .content .boxSub {
+    width: 25%;
+    text-align: center;
+}
+
+footer .contentSub {
+    width: 25%;
+    text-align: center;
+    margin-left: 37.5%;
+}
+
+footer dd {
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+footer dt {
+    font-weight: bold;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

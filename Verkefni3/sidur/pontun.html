@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pantanir | Rækjan</title>
+  <meta name="description" content="Panta frá Rækjunni">
+  <meta property="og:title" content="Rækjan">
+  <meta property="og:description" content="Panta frá Rækjunni">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Pantanir</h1>
+    <p>
+      Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+      þú sækir.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Forsíða</a></li>
+      <li><a href="./um.html">Um Veitingastaðinn</a></li>
+      <li><a href="./matsedill.html">Matseðill</a></li>
+      <li><strong>Pöntunarsíða</strong></li>
+    </ul>
+  </nav>
+
+  <main id="efni">
+    <form method="post" action=".">
+      <div class="reitur1">
+      <fieldset>
+        <legend>Panta borð</legend>
+        <div>
+          <label for="when">Hvenær viltu koma?</label>
+          <p><input type="datetime-local" id="when" name="when"></p>
+        </div>
+        <div>
+          <p><label for="size">Hve mörg?</label></p>
+          <select id="size">
+            <div class="einn">
+            <option>1</option>
+          </div>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div>
+          <label for="special">Viltu taka eitthvað fram?</label>
+          <textarea id="special"></textarea>
+        </div>
+      </fieldset>
+    </div>
+    <div class="reitur2"> 
+      <fieldset>
+        <legend>Panta mat</legend>
+        <div>
+          <label for="food1">Réttur #1</label>
+          <input id="food1" list="foods">
+        </div>
+        <div>
+          <label for="food2">Réttur #2</label>
+          <input id="food2" list="foods">
+        </div>
+        <div>
+          <label for="food3">Réttur #3</label>
+          <input id="food3" list="foods">
+        </div>
+        <div>
+          <label for="food4">Réttur #4</label>
+          <input id="food4" list="foods">
+        </div>
+        <div>
+          <label for="food5">Réttur #5</label>
+          <input id="food5" list="foods">
+        </div>
+        <div>
+          <label for="address">Heimilisfang</label>
+          <input type="text" id="address">
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="reitur3">
+      <fieldset>
+        <legend>Þínar upplýsingar</legend>
+        <div>
+          <label for="name">Nafn</label>
+          <input id="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">Netfang</label>
+          <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+        </div>
+        <div>
+          <label for="phone">Sími</label>
+          <input id="phone" type="tel" required placeholder="345-6789">
+        </div>
+      </fieldset>
+    </div>
+    <div class="reitur4">
+      <fieldset>
+        <legend>Samþykkja og panta</legend>
+        <div>
+          <label>
+            <input type="checkbox" name="terms">Ég samþykki skilmála
+            Veitingastaðsins</label>
+        </div>
+        <button>Panta</button>
+      </fieldset>
+    </div>
+      <datalist id="foods">
+        <option>Lasagna með rækjum</option>
+        <option>Rækju risotto</option>
+        <option>Ferskt pasta með rækjum</option>
+        <option>Quesadilla með rækjum</option>
+        <option>Falafel með rækju-hummus</option>
+        <option>Rækjusúpa dagsins</option>
+        <option>Kryddaðar sætrækjur</option>
+        <option>Hamborgari</option>
+        <option>Pizza</option>
+      </datalist>
+    </form>
+    <div class="aftur">
+    <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+      </div>
+  </main>
+
+  <footer>
+    <div class="contentSub">
+      <div class="boxSub">
+        <h2>Opnunartími</h2>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00-18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00-22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00-22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </div>
+      <div class="boxSub">
+        <h2>Hér erum við</h2>
+        <ul>
+          <li>Veitingastaðurinn ehf.</li>
+          <li>Aðalgata 10</li>
+          <li>100 Reykjavík</li>
+          <li><a href="tel:3334567">Sími 333-4567</a></li>
+          <li>
+            <a href="mailto:rækjan@rækjur.org">rækjan@rækjur.org</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
