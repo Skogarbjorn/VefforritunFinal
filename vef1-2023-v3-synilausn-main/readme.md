@@ -1,3 +1,3 @@
-# Vefforritun 1, 2023: Verkefni 3, CSS #1, sýnilausn
+# Vinsamlegast hunsið nafn foldersins
 
-[Sjá lýsingu á verkefni](https://github.com/vefforritun/vef1-2023-v3).
+Ég er greinilega ekki með permissions til að breyta nafninu í gegn um vscode og þori ekki að reyna að berjast við git...
