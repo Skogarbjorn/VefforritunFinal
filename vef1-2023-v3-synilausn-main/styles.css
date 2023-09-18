@@ -1,0 +1,214 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
+}
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*** Almennt ***/
+
+html,
+input,
+select,
+button {
+  font-size: 16px;
+  font-family: 'Lora', serif;
+}
+
+a {
+  color: inherit;
+}
+
+h2,
+h3,
+section {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 400px;
+  width: 400px;
+}
+
+
+/*** Haus ***/
+
+body > header {
+  padding: 1rem;
+  border-bottom: 8px solid #ffe7ae;
+
+  background-color: #2f0505;
+  color: #fff1cf;
+
+  text-align: center;
+}
+
+/*** Valmynd ***/
+
+nav {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: #fff9ee;
+  color: #2f0505;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding-right: 1rem;
+}
+
+/*** Meginmál ***/
+
+main {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 900px;
+}
+
+/*** Fótur ***/
+
+footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 8px solid #ffe7ae;
+
+  background-color: #2f0505;
+  color: #fff1cf;
+  display: flex;
+  padding-left: 27.5%;
+  padding-right: 25%;
+  gap: 5%;
+}
+
+footer section {
+  vertical-align: top;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+/*** Box! ***/
+
+.boxes {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.box {
+  list-style: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #fff1cf;
+}
+
+.box a {
+  font-weight: bold;
+}
+
+.box h3 {
+  border-bottom: 1px solid black;
+
+}
+
+/*** Opnunartími ***/
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
+/*** Matseðill ***/
+
+table {
+  margin-bottom: 1rem;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: #ffe7ae;
+}
+
+/*** Pöntunarform ***/
+
+
+fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset div {
+  margin-bottom: 1rem;
+}
+
+fieldset div label {
+  display: flex;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: 0.5rem;
+}
+
+fieldset .check {
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+form button {
+  padding: 0.25rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
