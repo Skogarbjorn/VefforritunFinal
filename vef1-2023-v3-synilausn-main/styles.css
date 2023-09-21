@@ -26,6 +26,34 @@ html {
   width: 1px;
 }
 
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  --doubleSpacing: 2rem;
+  --halfSpacing: 0.5rem;
+  --quarterSpacing: 0.25rem;
+
+  /* Hámarksbreidd á efni */
+  --max-width: 900px;
+
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
+}
+
 /*** Almennt ***/
 
 html,
@@ -33,7 +61,11 @@ input,
 select,
 button {
   font-size: 16px;
-  font-family: 'Lora', serif;
+  font-family: var(--font-family-base);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: var(--font-family-heading);
 }
 
 a {
@@ -43,7 +75,7 @@ a {
 h2,
 h3,
 section {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 img {
@@ -52,29 +84,29 @@ img {
   object-position: top;
   height: 400px;
   width: 400px;
+  margin-bottom: var(--halfSpacing);
 }
-
 
 /*** Haus ***/
 
 body > header {
-  padding: 1rem;
-  border-bottom: 8px solid #ffe7ae;
-
-  background-color: #2f0505;
-  color: #fff1cf;
-
-  text-align: center;
+  padding: var(--spacing);
+  border-bottom: var(--border-large) solid var(--color-gold);
+  display: flex;
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+  flex-direction: column;
+  align-items: center;
 }
 
 /*** Valmynd ***/
 
 nav {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: var(--spacing);
+  padding: var(--spacing);
 
-  background-color: #fff9ee;
-  color: #2f0505;
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 nav ul {
@@ -84,66 +116,78 @@ nav ul {
 }
 
 nav ul li {
-  padding-right: 1rem;
+  padding-right: var(--spacing);
 }
 
 /*** Meginmál ***/
 
 main {
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 900px;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  max-width: var(--max-width);
 }
 
 /*** Fótur ***/
 
 footer {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-top: 8px solid #ffe7ae;
+  margin-top: var(--spacing);
+  padding: var(--spacing);
+  border-top: var(--border-large) solid var(--color-gold);
 
-  background-color: #2f0505;
-  color: #fff1cf;
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
   display: flex;
-  padding-left: 27.5%;
-  padding-right: 25%;
   gap: 5%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 footer section {
   vertical-align: top;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer ul {
+footer ul, footer dl {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*** Box! ***/
 
 .boxes {
   display: flex;
-  gap: 2rem;
-  padding-bottom: 1rem;
+  gap: var(--doubleSpacing);
+  padding-bottom: var(--spacing);
 }
 
 .box {
   list-style: none;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  border-radius: var(--halfSpacing);
+  margin-bottom: var(--spacing);
   vertical-align: top;
   width: 100%;
-  padding: 0.5rem;
-  background-color: #fff1cf;
+  padding: var(--halfSpacing);
+  background-color: var(--color-gold-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.box .boxContent {
+  flex: 1;
 }
 
 .box a {
+  margin-top: var(--spacing);
   font-weight: bold;
 }
 
 .box h3 {
-  border-bottom: 1px solid black;
+  border-bottom: var(--border-small) solid black;
 
 }
 
@@ -154,33 +198,33 @@ dt {
 }
 
 dd {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 /*** Matseðill ***/
 
 table {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
   border-spacing: 0;
   width: 100%;
 }
 
 table th,
 table td {
-  padding: 0.5rem;
+  padding: var(--halfSpacing);
 }
 
 table tbody tr:nth-child(2n + 1) {
-  background-color: #ffe7ae;
+  background-color: var(--color-gold);
 }
 
 /*** Pöntunarform ***/
 
 
 fieldset {
-  margin-bottom: 1rem;
-  border: 1px solid black;
-  padding: 1rem;
+  margin-bottom: var(--spacing);
+  border: var(--border-small) solid black;
+  padding: var(--spacing);
 }
 
 fieldset legend {
@@ -188,7 +232,7 @@ fieldset legend {
 }
 
 fieldset div {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
 }
 
 fieldset div label {
@@ -198,17 +242,17 @@ fieldset div label {
 fieldset input,
 fieldset select,
 fieldset textarea {
-  padding: 0.5rem;
+  padding: var(--halfSpacing);
 }
 
 fieldset .check {
-  padding-left: 0.5rem;
-  padding-top: 1rem;
+  padding-left: var(--halfSpacing);
+  padding-top: var(--spacing);
 }
 
 form button {
-  padding: 0.25rem;
-  border-radius: 6px;
+  padding: var(--quarterSpacing);
+  border-radius: var(--border-radius);
   width: 100%;
 }
 
