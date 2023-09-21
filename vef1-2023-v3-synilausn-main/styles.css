@@ -72,6 +72,10 @@ a {
   color: inherit;
 }
 
+.box a {
+  margin-bottom: var(--quarterSpacing);
+}
+
 h2,
 h3,
 section {
