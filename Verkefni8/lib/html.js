@@ -71,6 +71,7 @@ export function createCartLine(product, quantity) {
   
   const totalElement = document.createElement('td');
   totalElement.textContent = formatPrice(product.price * quantity);
+  totalElement.classList.add('itemTotalPrice');
   cartLineElement.appendChild(totalElement);
   
   const formTdElement = document.createElement('td');

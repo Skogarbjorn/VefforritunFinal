@@ -1,4 +1,5 @@
 import { createCartLine, showCartContent } from './lib/html.js';
+import {formatPrice} from './lib/helpers.js'
 
 const products = [
   {
@@ -53,9 +54,10 @@ function submitHandler(event) {
   // Bætum vöru í körfu (hér væri gott að bæta við athugun á því að varan sé til)
   addProductToCart(product, quantity);
   let element = document.getElementsByClassName("foo");
-  element.innerText = 1 * quantity;
+  element.innerText += quantity;
 
   // updateað verð sem samtals talan
+
   element.textContent = `${element} kr.-`;
 
   updateAmount();
@@ -63,6 +65,14 @@ function submitHandler(event) {
 
   document.querySelector('.tableToggle').style.display = "block";
   document.querySelector('.empty-message').style.display = "none";
+
+  let Sum = 0;
+/*
+  const itemPriceElement = document.querySelector('.itemPrice');
+  const g = tr.dataset.price
+  const h = tr.dataset.quantity;
+  Sum += g * h;
+  */
 }
 
 function addProductToCart(product, quantity) {
@@ -83,12 +93,14 @@ function addProductToCart(product, quantity) {
     existingLine.dataset.quantity = currentQuantity + quantity;
 
 
-    const quantityElement = existingLine.querySelector('.quantity');
+    const quantityElement = existingLine.querySelector('.foo');
+    const itemTotalPriceElement = existingLine.querySelector('.itemTotalPrice');
 
     if (quantityElement) {
 
-      quantityElement.textContent = existingLine.dataset.quantity;
 
+      quantityElement.textContent = existingLine.dataset.quantity;
+      itemTotalPriceElement.textContent = formatPrice(existingLine.dataset.quantity * existingLine.dataset.price)
     }
     updateTotalPrice();
 
