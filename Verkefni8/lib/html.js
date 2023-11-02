@@ -25,6 +25,7 @@ function updateTotalPrice() {
 function reverseTable() {
   document.querySelector('.tableToggle').style.display = "none";
   document.querySelector('.empty-message').style.display = "block";
+    document.querySelector('.completeButton').style.display = "none";
 }
 
 function deleteLineFromCart(event) {

@@ -65,8 +65,7 @@ function submitHandler(event) {
 
   document.querySelector('.tableToggle').style.display = "block";
   document.querySelector('.empty-message').style.display = "none";
-
-  let Sum = 0;
+  document.querySelector('.completeButton').style.display = "block";
 /*
   const itemPriceElement = document.querySelector('.itemPrice');
   const g = tr.dataset.price
