@@ -22,6 +22,11 @@ function updateTotalPrice() {
   totalPriceElement.textContent = `${totalSum} kr.-`;
 }
 
+function reverseTable() {
+  document.querySelector('.tableToggle').style.display = "none";
+  document.querySelector('.empty-message').style.display = "block";
+}
+
 function deleteLineFromCart(event) {
   event.preventDefault();
   // console.log('Eyða!', event.submitter)
@@ -29,6 +34,9 @@ function deleteLineFromCart(event) {
   // console.log(lineToDelete)
   lineToDelete.parentElement.removeChild(lineToDelete)
   updateTotalPrice();
+  if (document.querySelector('.foo') === null) {
+    reverseTable();
+  }
 }
 
 /**
